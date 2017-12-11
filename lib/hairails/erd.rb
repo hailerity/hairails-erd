@@ -1,4 +1,5 @@
 require "hairails/erd/version"
+require "hairails/erd/runner"
 
 module Hairails
   module Erd

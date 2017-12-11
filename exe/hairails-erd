@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'hairails/erd'
+Hairails::Erd::Runner.invoke
