@@ -20,7 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```bash
+hairails-erd [svg_file_path]
+```
 
 ## Development
 

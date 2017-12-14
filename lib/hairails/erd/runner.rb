@@ -7,7 +7,17 @@ module Hairails
       end
 
       def self.run(args, err=$stderr, out=$stdout)
-        puts "Hello World"
+        svg_path = args[0]
+        models = SvgParser.new(svg_path).parse
+
+        # TODO: Handle abnormal class
+        models.select{|name, model|
+          name.to_s.match /^\w+$/
+        }.each do |name, model|
+          ModelGenerator.new(model).generate
+        end
+
+        0
       end
     end
   end
