@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'hairails/erd'
+# require 'hairails/erd'
+require_relative '../lib/hairails/erd.rb'
 Hairails::Erd::Runner.invoke
